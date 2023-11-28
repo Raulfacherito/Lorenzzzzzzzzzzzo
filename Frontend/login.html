@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monaco">
+    <script>
+        function validateLabels() {
+           var labels = document.getElementsByTagName('label');
+           for (var i = 0; i < labels.length; i++) {
+             if (labels[i].innerText === "") {
+               labels[i].innerText = "Pon algo valido";
+             }
+           }
+        }
+       </script>
+</head>
+<style>
+</style>
+<body>
+    
+    <form action="" method="get">
+      <h1>Iniciar sesión</h1>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="correo electronico">
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required placeholder="Contraseña">
+        <br>
+        <button class="bttn-gradient bttn-md bttn-royal">Login</button>
+    </form>
+</body>
+</html>
